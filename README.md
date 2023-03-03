@@ -15,7 +15,7 @@ and also added some aliases to make my life easier.
 ## Powerlevel10k
 
 I am using Powerlevel10k as my terminal theme. I have customized it to look like this:
-![Terminal](https://raw.githubusercontent.com/Lakshmanshankar/linux-configs/main/example/zsh.png)
+![Terminal](https://raw.githubusercontent.com/Lakshmanshankar/linux-configs/main/examples/zsh.png)
 
 ## Zsh autosuggestions
 
@@ -30,6 +30,6 @@ I am using Zsh syntax highlighting as my terminal theme. It highlights the comma
 
 ## Vim
 
-I am using customized vim (NvChan) as my text editor. I have customized it to look like this:
+I am using customized vim (NvChad config) as my text editor. I have customized it to look like this:
 
-![Vim](https://raw.githubusercontent.com/Lakshmanshankar/linux-configs/main/example/neovim.png)
+![Vim](https://raw.githubusercontent.com/Lakshmanshankar/linux-configs/main/examples/neovim.png)
