@@ -35,6 +35,24 @@ I Switched to Astrovim from nvChad. Astrovim is a minimalistic vim config. I hav
 ![Vim](https://raw.githubusercontent.com/Lakshmanshankar/linux-configs/main/examples/nvim.png)
 
 
+## Tweaks
+I have added some tweaks to make my life easier.
+
+![Vim](https://raw.githubusercontent.com/Lakshmanshankar/linux-configs/main/examples/lakshmanvim.png)
+
+
+## Features
+
+1. NeoTree -> File explorer
+2. Telescope -> Fuzzy finder, ripgrep, live grep // for searching files and code in the entire codebase
+3. LSP -> Language server protocol
+4. Git -> Git integration
+5. Nerd Fonts -> Icons
+6. Github Copilot -> AI assisted coding
+7. Themes -> Catppuccin, One dark, vscode
+
+Astro includes 50 plugins and 100+ keybindings. It is a minimalistic vim config
+
 ## Details
 
 By default Astrovim uses [Nerd Fonts](https://www.nerdfonts.com/).
