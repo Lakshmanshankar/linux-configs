@@ -30,6 +30,70 @@ I am using Zsh syntax highlighting as my terminal theme. It highlights the comma
 
 ## Vim
 
-I am using customized vim (NvChad config) as my text editor. I have customized it to look like this:
+I Switched to Astrovim from nvChad. Astrovim is a minimalistic vim config. I have customized it to look like this:
 
-![Vim](https://raw.githubusercontent.com/Lakshmanshankar/linux-configs/main/examples/neovim.png)
+![Vim](https://raw.githubusercontent.com/Lakshmanshankar/linux-configs/main/examples/nvim.png)
+
+
+## Details
+
+By default Astrovim uses [Nerd Fonts](https://www.nerdfonts.com/).
+
+On top of that I have added the following plugins:
+1. I am using Github Copilot for AI assisted coding.
+2. By default the dot env and other non programming files are not highlighted. for that You gave to do the following 
+in lua/user/init.lua
+
+```lua
+    ["neo-tree"] = {
+      filesystem = {
+        filtered_items = {
+          visible = true, 
+          hide_dotfiles = false,
+          hide_gitignored = true,
+        },
+      }
+    },
+```
+
+NeoTree is a file explorer for vim. But some of the files are ignored by default like .env files. So I have added the above code to show all the files.
+
+
+3. Themes
+
+Astrovim comes with a few themes. I have added the following themes:
+
+The default theme is something simialr to onedark. So Installed the one dark them and  catppuccin theme
+
+To add themes /lua/user/init.lua (it is for own configs this will overwrite the default lua confs)
+
+```lua
+plugins = {
+    init = {
+       "joshdick/onedark.vim",
+        "catppuccin/nvim",
+        "Mofiqul/vscode.nvim"
+    },
+    {
+      "catppuccin/nvim",
+      as = "catppuccin",
+      config = function()
+        require("catppuccin").setup {}
+      end,
+    },
+```
+
+
+Once You added the above code to the init.lua file. You have to install the themes using the following command:
+
+```bash 
+
+:PackerInstall
+
+```
+
+To change the theme you have to add the following code to the init.lua file:
+
+```lua
+:colorscheme catppuccin #likewise you can change the theme
+```
